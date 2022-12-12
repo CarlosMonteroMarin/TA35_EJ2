@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Forms } from '../models/Forms';
 
 @Component({
   selector: 'app-resultado',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./resultado.component.css']
 })
 export class ResultadoComponent {
+  @Input() valor : Forms| any;
+
 
 }
